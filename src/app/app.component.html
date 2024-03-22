@@ -1,0 +1,24 @@
+<div>
+  <h1>Image Slideshow App</h1>
+</div>
+<div
+  style="
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    gap: 20px;
+  "
+>
+  <app-image-slider *ngIf="images.length"
+    [animationSpeed]="100"
+    [images]="images"
+    [autoPlay]="true"
+  ></app-image-slider>
+
+</div>
+
+<div>
+  <app-image-add></app-image-add>
+</div>
